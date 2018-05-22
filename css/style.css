@@ -9,13 +9,18 @@ mobile version
 .container {
     z-index: 400;
     display: grid;
-    grid-template-areas: '. logo burger';
+    grid-template-areas: 'logo logo burger';
     grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
     background-color: white;
 
 }
-
+.logo {
+    grid-area: logo;
+    align-self: center;
+    padding: 0.3em;
+    padding-left: 1em;
+}
 
 
 .wrapper {
@@ -275,7 +280,7 @@ header nav ul li a {
     width: 300vw;
     height: 300vw;
     color: #FEFEFE;
-    background: #EEE8E7;
+    background: #E1E2E3;
     border-radius: 50%;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
