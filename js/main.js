@@ -1,6 +1,6 @@
 let burgermenu = document.querySelector(".burgerbutton");
 let navbarBig = document.querySelector(".navbarBig");
-
+let navbarSmall = document.querySelector(".navbarSmall");
 let burgermenuMob = document.querySelector(".burgerbuttonMob");
 
 
@@ -13,5 +13,7 @@ function openMenu(){
     burgermenu.classList.toggle('active');
     console.log("something happened");
     navbarBig.classList.toggle('enabled');
+    navbarSmall.classList.toggle('show');
+
 }
 
