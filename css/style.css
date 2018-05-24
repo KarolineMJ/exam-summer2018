@@ -9,6 +9,56 @@ Mobile Version
 .containerWeb{
     display: none;
 }
+
+.burgerbuttonMob {
+    margin-top: 20px;
+    z-index: 10;
+  position: absolute;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.burgerbuttonMob span {
+  width: 100%;
+  transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275); /* makes it ease */
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.burgerbuttonMob span:nth-child(1) {
+  top: 0;
+}
+.burgerbuttonMob span:nth-child(2) {
+  top: 44%;
+  width: 60%;
+}
+.burgerbuttonMob span:nth-child(3) {
+  bottom: 0;
+}
+.burgerbuttonMob.active span:nth-child(1) {
+  top: 20px;
+  transform-origin: left;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.burgerbuttonMob.active span:nth-child(2) {
+  width: 0%;
+}
+.burgerbuttonMob.active span:nth-child(3) {
+  bottom: 20px;
+transform-origin: left;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 /*-----------------------------------------------------------------------------
 Web Version
 ----------------------------------------------------------------------------*/
