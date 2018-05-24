@@ -4,16 +4,19 @@ let navbarSmall = document.querySelector(".navbarSmall");
 let burgermenuMob = document.querySelector(".burgerbuttonMob");
 
 
-burgermenuMob.addEventListener('click', openMenu);
+burgermenuMob.addEventListener('click', openSmallMenu);
 burgermenu.addEventListener('click', openMenu);
 
 
 function openMenu(){
-    burgermenuMob.classList.toggle('active');
     burgermenu.classList.toggle('active');
     console.log("something happened");
     navbarBig.classList.toggle('enabled');
+}
+
+
+function openSmallMenu(){
+    burgermenuMob.classList.toggle('active');
     navbarSmall.classList.toggle('show');
 
 }
-
