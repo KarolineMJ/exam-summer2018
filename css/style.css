@@ -2,6 +2,7 @@
     font-family: "Ovink-Thin";
     src: url("fonts/Ovink-Thin.otf");
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -11,59 +12,69 @@
 /*-----------------------------------------------------------------------------
 Mobile Version
 ----------------------------------------------------------------------------*/
-.containerWeb{
+
+.containerWeb {
     display: none;
 }
 
 .burgerbuttonMob {
     margin-top: 20px;
     z-index: 900;
-  position: absolute;
-  right: 20px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
+    position: absolute;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
 
 }
+
 .burgerbuttonMob span {
-  width: 100%;
-  transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275); /* makes it ease */
-  height: 2px;
-  background: #000000;
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+    width: 100%;
+    transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* makes it ease */
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
 }
+
 .burgerbuttonMob span:nth-child(1) {
-  top: 0;
+    top: 0;
 }
+
 .burgerbuttonMob span:nth-child(2) {
-  top: 44%;
-  width: 60%;
+    top: 44%;
+    width: 60%;
 }
+
 .burgerbuttonMob span:nth-child(3) {
-  bottom: 0;
+    bottom: 0;
 }
+
 .burgerbuttonMob.active span:nth-child(1) {
-  top: 20px;
-  transform-origin: left;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+    top: 20px;
+    transform-origin: left;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
+
 .burgerbuttonMob.active span:nth-child(2) {
-  width: 0%;
+    width: 0%;
 }
+
 .burgerbuttonMob.active span:nth-child(3) {
-  bottom: 20px;
-transform-origin: left;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+    bottom: 20px;
+    transform-origin: left;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 .containerMob {
     height: 50px;
     display: grid;
@@ -76,15 +87,15 @@ transform-origin: left;
 
 }
 
-.navbarSmall{
+.navbarSmall {
     display: none;
 }
 
-.show{
+.show {
     display: block;
 }
 
-.navbarText{
+.navbarText {
     background-color: #e9e9e9;
     width: 100vw;
     height: 100vh;
@@ -103,11 +114,11 @@ transform-origin: left;
     overflow: hidden;
 }
 
-.navbarSmall li{
-}
-.navbarSmall a{
-    display:inline-block;
-    padding:10px;
+.navbarSmall li {}
+
+.navbarSmall a {
+    display: inline-block;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -116,105 +127,169 @@ transform-origin: left;
 Web Version
 ----------------------------------------------------------------------------*/
 
+@media screen and (min-width: 580px) {
+    .containerWeb {
+        position: relative;
+        display: block;
+    }
 
-@media screen and (min-width: 580px){
-.containerWeb{
-    position: relative;
-    display: block;
-}
 
-
-    .containerMob{
+    .containerMob {
         display: none;
     }
 
-.burgerbutton {
-    margin-top: 20px;
-    z-index: 10;
-  position: absolute;
-  right: 20px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-.burgerbutton span {
-  width: 100%;
-  transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275); /* makes it ease */
-  height: 2px;
-  background: #000000;
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-.burgerbutton span:nth-child(1) {
-  top: 0;
-}
-.burgerbutton span:nth-child(2) {
-  top: 44%;
-  width: 60%;
-}
-.burgerbutton span:nth-child(3) {
-  bottom: 0;
-}
-.burgerbutton.active span:nth-child(1) {
-  top: 20px;
-  transform-origin: left;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.burgerbutton.active span:nth-child(2) {
-  width: 0%;
-}
-.burgerbutton.active span:nth-child(3) {
-  bottom: 20px;
-transform-origin: left;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
+    .burgerbutton {
+        margin-top: 20px;
+        z-index: 10;
+        position: absolute;
+        right: 20px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .burgerbutton span {
+        width: 100%;
+        transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        /* makes it ease */
+        height: 2px;
+        background: #000000;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    .burgerbutton span:nth-child(1) {
+        top: 0;
+    }
+    .burgerbutton span:nth-child(2) {
+        top: 44%;
+        width: 60%;
+    }
+    .burgerbutton span:nth-child(3) {
+        bottom: 0;
+    }
+    .burgerbutton.active span:nth-child(1) {
+        top: 20px;
+        transform-origin: left;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .burgerbutton.active span:nth-child(2) {
+        width: 0%;
+    }
+    .burgerbutton.active span:nth-child(3) {
+        bottom: 20px;
+        transform-origin: left;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 
-nav{
+    nav {
         justify-self: end;
-    display: none;
-}
+        display: none;
+    }
 
-nav li{
-    display:inline;
-}
-nav a{
-    display:inline-block;
-    padding:10px;
-    text-decoration: none;
-}
+    nav li {
+        display: inline;
+    }
+    nav a {
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+    }
 
 
-.containerWeb {
-    height: 50px;
-    z-index: 400;
-    display: grid;
-    grid-template-areas: '. logo burger';
-    grid-template-columns: 0.5fr 1fr 70px;
-    width: 100vw;
-    background-color: white;
-    align-items: center;
+    .containerWeb {
+        height: 50px;
+        z-index: 400;
+        display: grid;
+        grid-template-areas: '. logo burger';
+        grid-template-columns: 0.5fr 1fr 70px;
+        width: 100vw;
+        background-color: white;
+        align-items: center;
 
-}
-.logo{
-    padding-left: 10px;
-}
+    }
+    .logo {
+        padding-left: 10px;
+    }
 
-.enabled{
-    display: block;
-}
+    .enabled {
+        display: block;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+
+        /* make the images go to lower left corner*/
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* slide images */
+    .mySlides img {
+        width: 70%;
+    }
+
+
+
+    /* furniture title */
+    .slideText {
+        font-size: 3em;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 10em;
+        width: 100%;
+        text-align: right;
+    }
+
+    .slideText p {
+        font-size: 1em;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
 }
