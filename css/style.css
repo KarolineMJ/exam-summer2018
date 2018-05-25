@@ -229,6 +229,7 @@ Web Version
         display: block;
     }
 
+
     /* Slideshow container */
     .slideshow-container {
         max-width: 1000px;
@@ -248,7 +249,7 @@ Web Version
 
     /* slide images */
     .mySlides img {
-        width: 70%;
+        width: 60%;
     }
 
 
@@ -263,9 +264,14 @@ Web Version
         text-align: right;
     }
 
-    .slideText p {
-        font-size: 1em;
+    .slideCaption {
+        text-align: right;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 25em;
+        width: 100%;
     }
+
 
     /* Fading animation */
     .fade {
