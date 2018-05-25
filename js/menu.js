@@ -1,3 +1,4 @@
+"use strict" // writes in the console if there is a mistake due to something is not defined
 let burgermenu = document.querySelector(".burgerbutton");
 let navbarBig = document.querySelector(".navbarBig");
 let navbarSmall = document.querySelector(".navbarSmall");
