@@ -230,16 +230,15 @@ Web Version
     }
 
 
-    /* Slideshow container */
+    /* slideshow container */
     .slideshow-container {
-        max-width: 1000px;
-        position: relative;
+        max-width: 100%;
         margin: auto;
 
         /* make the images go to lower left corner*/
         position: absolute;
-        left: 0px;
-        bottom: 0px;
+        left: 0em;
+        bottom: 0em;
     }
 
     /* Hide the images by default */
@@ -249,31 +248,29 @@ Web Version
 
     /* slide images */
     .mySlides img {
-        width: 60%;
+        width: 50%;
     }
 
 
 
-    /* furniture title */
+    /* furniture title and caption */
     .slideText {
         font-size: 3em;
-        padding: 8px 12px;
         position: absolute;
         bottom: 10em;
-        width: 100%;
+        width: 95%;
         text-align: right;
     }
 
     .slideCaption {
         text-align: right;
-        padding: 8px 12px;
         position: absolute;
-        bottom: 25em;
-        width: 100%;
+        bottom: 27em;
+        width: 95%;
     }
 
 
-    /* Fading animation */
+    /* fading animation */
     .fade {
         -webkit-animation-name: fade;
         -webkit-animation-duration: 1.5s;
@@ -289,7 +286,6 @@ Web Version
             opacity: 1
         }
     }
-
     @keyframes fade {
         from {
             opacity: .4
