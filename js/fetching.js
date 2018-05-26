@@ -5,6 +5,9 @@ let furniture =  document.querySelector("#furnitures");
 let page =1;
 let lookingForData = false;
 
+
+
+
 function fetchFunitures(){
     lookingForData=true;
 
@@ -32,6 +35,18 @@ function showFurniture(aFurniture){
 
     if(aFurniture.acf["product-page-image"]){
         clone.querySelector("img").setAttribute("src", aFurniture.acf["product-page-image"].sizes.large)
+
+        let frontImages = document.querySelectorAll("img");
+
+        let imgHeight = frontImages.height;
+        let imgWidth = frontImages.width;
+
+        frontImages.forEach(frontImage =>{
+        console.log("something happened to the picture");
+        if(imgWidth < imgHeight){
+            frontImage.classList.add("horizontal");
+            }
+        });
        }
     else{
         clone.querySelector("img").remove()
@@ -42,3 +57,6 @@ furniture.appendChild(clone);
 }
 
 fetchFunitures();
+
+
+
