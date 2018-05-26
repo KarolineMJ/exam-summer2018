@@ -13,6 +13,13 @@
 Mobile Version
 ----------------------------------------------------------------------------*/
 
+/* logo */
+
+.containerMob img {
+    width: 12em;
+    padding: 1.5em;
+}
+
 /* burger menu */
 
 .containerWeb {
@@ -29,6 +36,7 @@ Mobile Version
     width: 30px;
     height: 20px;
     cursor: pointer;
+
 
 }
 
@@ -150,17 +158,21 @@ Mobile Version
 
 /* furniture title and caption */
 
+.frontPageText {
+    position: relative;
+}
+
 .slideText {
     font-size: 3em;
     position: absolute;
-    bottom: 12em;
+    bottom: 70vh;
     text-align: center;
     width: 100%;
 }
 
 .slideCaption {
     position: absolute;
-    bottom: 30em;
+    bottom: 55vh;
     text-align: center;
     padding: 2em 5em 2em 5em;
 }
@@ -213,6 +225,14 @@ Web Version
         display: none;
     }
 
+    /* logo  */
+    .containerWeb img {
+        width: 12em;
+        padding: 1.5em;
+    }
+
+
+    /* burger menu */
     .burgerbutton {
         margin-top: 20px;
         z-index: 10;
