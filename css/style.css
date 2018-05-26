@@ -13,6 +13,8 @@
 Mobile Version
 ----------------------------------------------------------------------------*/
 
+/* burger menu */
+
 .containerWeb {
     display: none;
 }
@@ -79,7 +81,7 @@ Mobile Version
     height: 50px;
     display: grid;
     grid-template-areas: ' logo burger';
-    grid-template-columns: 1fr 120px;
+    grid-template-columns: 0.5fr 120px;
     width: 100vw;
     align-items: center;
     position: fixed;
@@ -122,12 +124,85 @@ Mobile Version
     text-decoration: none;
 }
 
+/* slideshow container */
+
+.slideshow-container {
+    max-width: 100%;
+    margin: auto;
+
+    /* make the images go to lower left corner*/
+    position: absolute;
+    left: 0em;
+    bottom: 0em;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+/* slide images */
+
+.mySlides img {
+    width: 80%;
+}
+
+/* furniture title and caption */
+
+.slideText {
+    font-size: 3em;
+    position: absolute;
+    bottom: 12em;
+    text-align: center;
+    width: 100%;
+}
+
+.slideCaption {
+    position: absolute;
+    bottom: 30em;
+    text-align: center;
+    padding: 2em 5em 2em 5em;
+}
+
+
+/* fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+
 
 /*-----------------------------------------------------------------------------
 Web Version
 ----------------------------------------------------------------------------*/
 
 @media screen and (min-width: 580px) {
+
+
     .containerWeb {
         position: relative;
         display: block;
@@ -221,8 +296,11 @@ Web Version
         align-items: center;
 
     }
+
     .logo {
         padding-left: 10px;
+
+
     }
 
     .enabled {
@@ -230,33 +308,8 @@ Web Version
     }
 
 
-    /* slideshow container */
-    .slideshow-container {
-        max-width: 100%;
-        margin: auto;
-
-        /* make the images go to lower left corner*/
-        position: absolute;
-        left: 0em;
-        bottom: 0em;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
-
-    /* slide images */
-    .mySlides img {
-        width: 50%;
-    }
-
-
-
-    /* furniture title and caption */
+    /* changing position of furniture text frontpage */
     .slideText {
-        font-size: 3em;
-        position: absolute;
         bottom: 10em;
         width: 95%;
         text-align: right;
@@ -264,34 +317,14 @@ Web Version
 
     .slideCaption {
         text-align: right;
-        position: absolute;
         bottom: 27em;
         width: 95%;
+        padding: 1em;
     }
 
-
-    /* fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
+    /* changing size of slideshow images */
+    .mySlides img {
+        width: 50%;
     }
 
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
 }
