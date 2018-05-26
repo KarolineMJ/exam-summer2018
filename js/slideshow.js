@@ -1,9 +1,9 @@
 let slideIndex = 0;
 showSlides();
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
+function showSlides(data) {
+    console.log(data)
+    let slides = document.querySelectorAll(".mySlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -13,4 +13,17 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
+
+    data.forEach("fadeEnding");
+
+
+}
+
+function fadeEnding() {
+    console.log("Something happening");
+
+    if (i <= 5000) {
+        slides.classList.add("fadeOut");
+
+    }
 }
