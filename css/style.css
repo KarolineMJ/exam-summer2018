@@ -24,6 +24,7 @@ Mobile Version
 
 .containerWeb {
     display: none;
+    position: fixed;
 }
 
 .burgerbuttonMob {
@@ -36,7 +37,6 @@ Mobile Version
     width: 30px;
     height: 20px;
     cursor: pointer;
-
 
 }
 
@@ -216,7 +216,6 @@ Web Version
 
 
     .containerWeb {
-        position: relative;
         display: block;
     }
 
@@ -231,6 +230,17 @@ Web Version
         padding: 1.5em;
     }
 
+    .topImg{
+        width: 70vw;
+        position: absolute;
+    }
+    .furnitureTitle{
+        align-self: center;
+        justify-self: center;
+        position: absolute;
+        right: 30px;
+        top: 30vh;
+    }
 
     /* burger menu */
     .burgerbutton {
@@ -304,16 +314,61 @@ Web Version
         text-decoration: none;
     }
 
+    .middleSubpage{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        position: relative;
+    }
+    .sideImg{
+        justify-self: end;
+        height: 70vh;
+
+    }
+    .topSVG{
+        position: absolute;
+    }
+
+    .furnitureDesc{
+        align-self: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .squaresSubpage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #ECE7E7;
+
+    }
+
+    .leftWord{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .rightWord{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .squaresSubpage img{
+        width: 50vw;
+    }
+
+    .topSubpage{
+        position: relative;
+        height: 90vh;
+    }
+
 
     .containerWeb {
-        height: 50px;
         z-index: 400;
         display: grid;
         grid-template-areas: '. logo burger';
         grid-template-columns: 0.5fr 1fr 70px;
         width: 100vw;
-        background-color: white;
         align-items: center;
+        position: fixed;
 
     }
 
