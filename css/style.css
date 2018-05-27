@@ -290,6 +290,7 @@ Web Version
         transform: rotate(45deg);
     }
 
+
     nav ul {
         list-style-type: none;
         margin: 0;
@@ -351,7 +352,15 @@ Web Version
       background-color: #ECE7E7;
     }
 
-
+    .vertical{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50vw;
+    }
+    .horizontal{
+        display: grid;
+        grid-template-columns: 1/-1;
+    }
 
     .workInfo:hover .overlay{
         opacity: 0.9;
