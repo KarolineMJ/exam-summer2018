@@ -15,7 +15,7 @@ function fetchFunitures(){
 
     let catid = urlParams.get("");
 
-    let endpoint = "http://www.kmjdesign.dk/m2/wordpress/wp-json/wp/v2/furniture/?_embed"
+    let endpoint = "http://www.kmjdesign.dk/m2/wordpress/wp-json/wp/v2/furniture/?_embed&per_page=30"
 
     fetch(endpoint)
     .then(e => e.json())
