@@ -31,7 +31,7 @@ function showFurnitures(data){
 function showFurniture(aFurniture){
     console.log("something")
     let clone = templateWork.cloneNode(true);
-    clone.querySelector("h2").textContent = aFurniture.title.rendered;
+    clone.querySelector(".text").textContent = aFurniture.title.rendered;
 
     if(aFurniture.acf["product-page-image"]){
         clone.querySelector("img").setAttribute("src", aFurniture.acf["product-page-image"].sizes.large)
