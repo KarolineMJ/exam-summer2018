@@ -37,6 +37,7 @@ function showFurniture(aFurniture){
         clone.querySelector("img").setAttribute("src", aFurniture.acf["product-page-image"].sizes.large)
 
         let frontImages = document.querySelectorAll(".image");
+        let imageSec = document.querySelectorAll(".imageSec");
 
         let imgHeight = frontImages.height;
         let imgWidth = frontImages.width;
@@ -48,9 +49,10 @@ function showFurniture(aFurniture){
             }
         if(frontImage.height < frontImage.width){
             frontImage.classList.add("horizontal");
-
         }
         });
+
+
        }
     else{
         clone.querySelector("img").remove()
