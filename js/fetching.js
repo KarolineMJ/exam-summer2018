@@ -53,6 +53,7 @@ function showFurniture(aFurniture){
         });
 
 
+
        }
     else{
         clone.querySelector("img").remove()
