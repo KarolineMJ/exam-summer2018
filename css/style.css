@@ -202,13 +202,20 @@ Mobile Version
     }
 }
 
-
+/*     footer      */
 
 footer {
     background-image: url(../img/footer-img.png);
     bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+.soMe img {
+    width: 10%;
 }
 
 /*-----------------------------------------------------------------------------
