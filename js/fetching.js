@@ -31,22 +31,28 @@ function showFurnitures(data){
 function showFurniture(aFurniture){
     console.log("something")
     let clone = templateWork.cloneNode(true);
-    clone.querySelector("h2").textContent = aFurniture.title.rendered;
+    clone.querySelector(".text").textContent = aFurniture.title.rendered;
 
     if(aFurniture.acf["product-page-image"]){
         clone.querySelector("img").setAttribute("src", aFurniture.acf["product-page-image"].sizes.large)
 
-        let frontImages = document.querySelectorAll("img");
+        let frontImages = document.querySelectorAll(".image");
+        let imageSec = document.querySelectorAll(".imageSec");
 
         let imgHeight = frontImages.height;
         let imgWidth = frontImages.width;
 
         frontImages.forEach(frontImage =>{
-        console.log("something happened to the picture");
-        if(imgWidth < imgHeight){
-            frontImage.classList.add("horizontal");
+        console.log(frontImage);
+        if(frontImage.width < frontImage.height){
+            frontImage.classList.add("vertical");
             }
+        if(frontImage.height < frontImage.width){
+            frontImage.classList.add("horizontal");
+        }
         });
+
+
        }
     else{
         clone.querySelector("img").remove()
