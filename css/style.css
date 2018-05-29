@@ -209,17 +209,40 @@ Mobile Version
 /*     footer      */
 
 footer {
-    background-image: url(../img/footer-img.png);
+    background-color: #EEEDEE;
     bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1em;
+
 
 }
 
+footer h1 {
+    font-size: 1.2em;
+    padding: 0.5em;
+    text-align: center;
+}
 
+footer p {
+    padding: 0.5em;
+}
+
+
+.collabMe img {
+    width: 15%;
+    padding: 1em;
+}
+
+.soMe {
+    left: 0em;
+    bottom: 0em;
+    margin: auto;
+}
 
 .soMe img {
     width: 10%;
+
 }
 
 /*      product page                */
@@ -227,15 +250,18 @@ footer {
 .billedeBlok {
     width: 90%;
     margin: auto;
+    padding-top: 5em;
 }
 
 .horizontalPic {
     width: 100%;
+    padding-bottom: 1em;
 
 }
 
 .verticalPic {
     width: 100%;
+    padding-bottom: 1em;
 }
 
 
@@ -641,10 +667,6 @@ Web Version
     /* changing size of slideshow images */
     .mySlides img {
         width: 50%;
-    }
-
-    footer {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
