@@ -211,23 +211,23 @@ Mobile Version
 footer {
     background-color: #EEEDEE;
     bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 1em;
-
-
 }
 
 footer h1 {
     font-size: 1.2em;
     padding: 0.5em;
-    text-align: center;
+    margin: auto;
 }
 
 footer p {
     padding: 0.5em;
 }
 
+.contactMe {
+    margin: auto;
+    width: 50%;
+}
 
 .collabMe img {
     width: 15%;
@@ -241,8 +241,8 @@ footer p {
 }
 
 .soMe img {
-    width: 10%;
-
+    width: 8%;
+    padding: 1em;
 }
 
 /*      product page                */
@@ -556,49 +556,21 @@ Web Version
 
     .collage {
         background-color: #EEEDEE;
-        height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
-
+        padding: 2em;
+        grid-gap: 2%;
     }
 
     .collage img {
-        width: auto;
-    }
-
-    .picture1 {
-        grid-column: 1;
-        grid-row: 1;
-        height: 20vh;
-
-
-    }
-
-    .picture2 {
-        grid-column: 2;
-        grid-row: 1/3;
-        height: 20vh;
-
-    }
-
-    .picture3 {
-        grid-column: 1;
-        grid-row: 2/-1;
-        height: 20vh;
-
-    }
-
-    .picture4 {
-        grid-column: 2;
-        grid-row: 3;
-        height: 20vh;
+        width: 100%;
+        padding: 1em;
     }
 
     .picture5 {
-        grid-column: 2;
-        grid-row: 4;
-        height: 20vh;
+        grid-column: 1;
     }
+
 
     /*   DETAILED PRODUCT PAGE   */
     .squaresSubpage {
@@ -667,6 +639,17 @@ Web Version
     /* changing size of slideshow images */
     .mySlides img {
         width: 50%;
+    }
+
+    /*     footer    */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .soMe img {
+        width: 5%;
     }
 
 }
