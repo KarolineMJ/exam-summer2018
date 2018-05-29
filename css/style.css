@@ -362,17 +362,17 @@ Web Version
         background-color: #ECE7E7;
     }
 
-
-
-    .vertical {
+    .billedeBlok{
         display: grid;
+    }
+
+
+    .vertical{
         grid-template-columns: 1fr 1fr;
         width: 50vw;
     }
-    .horizontal {
-        display: grid;
+    .horizontal{
         grid-template-columns: 1/-1;
-        width: 100%;
     }
 
     .workInfo:hover .overlay {
