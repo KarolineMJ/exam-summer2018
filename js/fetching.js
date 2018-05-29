@@ -38,21 +38,23 @@ function showFurniture(aFurniture) {
         img.setAttribute("src", aFurniture.acf["product-page-image"].sizes.large);
 
 
-        let frontImages = document.querySelectorAll(".productPic");
-
-        frontImages.forEach(frontImage =>{
-        if (frontImage.width < frontImage.height) {
-            frontImage.classList.add("vertical");
-        } else{
-            frontImage.classList.add("horizontal");
-        }
-        });
     } else {
         clone.querySelector("img").remove()
     }
 
     clone.querySelector('.seeMore').href = "detailed-work.html?id=" + aFurniture.id;
     billedeBlok.appendChild(clone);
+
+        let frontImages = document.querySelectorAll(".productPic");
+
+
+        frontImages.forEach(frontImage =>{
+        if (frontImage.width < frontImage.height) {
+            frontImage.parentElement.classList.add("vertical");
+        } else{
+            frontImage.parentElement.classList.add("horizontal");
+        }
+        });
 }
 
 fetchFunitures();
