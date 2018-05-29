@@ -37,6 +37,19 @@ function showFurniture(aFurniture) {
         const img = clone.querySelector("img");
         img.setAttribute("src", aFurniture.acf["product-page-image"].sizes.large);
 
+        img.addEventListener("load", (e)=>{
+        const image = e.target;
+        console.log("height", image.height, image.parentElement);
+
+
+        if(image.width < image.height){
+            image.parentElement.classList.add("vertical");
+        }
+        else{
+            image.parentElement.classList.add("horizontal");
+
+        }
+    })
 
     } else {
         clone.querySelector("img").remove()
@@ -45,9 +58,12 @@ function showFurniture(aFurniture) {
     clone.querySelector('.seeMore').href = "detailed-work.html?id=" + aFurniture.id;
     billedeBlok.appendChild(clone);
 
-        let frontImages = document.querySelectorAll(".productPic");
+    let frontImages = document.querySelectorAll(".productPic");
 
 
+
+
+/*
         frontImages.forEach(frontImage =>{
         if (frontImage.width < frontImage.height) {
             frontImage.parentElement.classList.add("vertical");
@@ -55,6 +71,8 @@ function showFurniture(aFurniture) {
             frontImage.parentElement.classList.add("horizontal");
         }
         });
+
+        */
 }
 
 fetchFunitures();
