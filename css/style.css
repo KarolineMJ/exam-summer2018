@@ -222,6 +222,23 @@ footer {
     width: 10%;
 }
 
+/*      product page                */
+
+.billedeBlok {
+    width: 90%;
+    margin: auto;
+}
+
+.horizontalPic {
+    width: 100%;
+
+}
+
+.verticalPic {
+    width: 100%;
+}
+
+
 
 /*      detailed product page       */
 
@@ -240,6 +257,14 @@ footer {
 
 .furnitureDesc {
     padding: 1.5em;
+}
+
+.squaresSubpage img {
+    width: 100%;
+}
+
+.sideImg {
+    width: 100%;
 }
 
 
@@ -385,12 +410,12 @@ Web Version
     }
     .sideImg {
         justify-self: end;
-        height: 70vh;
+        width: 50vw;
 
     }
     .topSVG {
         position: absolute;
-        height: 100vh;
+        width: 100vw;
         right: 0;
         display: block;
     }
@@ -421,7 +446,11 @@ Web Version
     .billedeBlok {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
+        width: 50%;
+        grid-gap: 1.5em;
+        padding: 1em;
+        margin: auto;
+        padding-top: 5em;
     }
 
     .vertical {}
@@ -431,6 +460,7 @@ Web Version
 
     .horizontalPic {
         width: 100%;
+
     }
     .verticalPic {
         width: 100%;
@@ -568,7 +598,7 @@ Web Version
 
     .topSubpage {
         position: relative;
-        height: 90vh;
+        height: 70vh;
     }
 
 
