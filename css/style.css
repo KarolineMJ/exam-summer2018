@@ -202,8 +202,21 @@ Mobile Version
     }
 }
 
+/*     footer      */
+
+footer {
+    background-image: url(../img/footer-img.png);
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 
 
+
+.soMe img {
+    width: 10%;
+}
 
 /*-----------------------------------------------------------------------------
 Web Version
@@ -227,11 +240,11 @@ Web Version
         padding: 1.5em;
     }
 
-    .topImg{
+    .topImg {
         width: 70vw;
         position: absolute;
     }
-    .furnitureTitle{
+    .furnitureTitle {
         align-self: center;
         justify-self: center;
         position: absolute;
@@ -312,46 +325,47 @@ Web Version
         text-decoration: none;
     }
 
-    .middleSubpage{
+    .middleSubpage {
         display: grid;
         grid-template-columns: 50vw 50vw;
         position: relative;
     }
-    .sideImg{
+    .sideImg {
         justify-self: end;
         height: 70vh;
 
     }
-    .topSVG{
+    .topSVG {
         position: absolute;
     }
 
-    .furnitureDesc{
+    .furnitureDesc {
         align-self: center;
         padding-left: 5vw;
         padding-right: 5vw;
     }
-    .workInfo{
-        position:relative;
+    .workInfo {
+        position: relative;
     }
 
-    .image{
+    .image {
         display: block;
     }
 
     .overlay {
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: #ECE7E7;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #ECE7E7;
     }
 
     .billedeBlok{
         display: grid;
     }
+
 
     .vertical{
         grid-template-columns: 1fr 1fr;
@@ -361,7 +375,7 @@ Web Version
         grid-template-columns: 1/-1;
     }
 
-    .workInfo:hover .overlay{
+    .workInfo:hover .overlay {
         opacity: 0.9;
     }
 
@@ -374,30 +388,30 @@ Web Version
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         text-align: center;
-}
+    }
 
-    .squaresSubpage{
+    .squaresSubpage {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: #ECE7E7;
 
     }
 
-    .leftWord{
+    .leftWord {
         justify-self: center;
         align-self: center;
     }
 
-    .rightWord{
+    .rightWord {
         justify-self: center;
         align-self: center;
     }
 
-    .squaresSubpage img{
+    .squaresSubpage img {
         width: 50vw;
     }
 
-    .topSubpage{
+    .topSubpage {
         position: relative;
         height: 90vh;
     }
@@ -442,6 +456,10 @@ Web Version
     /* changing size of slideshow images */
     .mySlides img {
         width: 50%;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
