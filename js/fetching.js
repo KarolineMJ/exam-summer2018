@@ -44,12 +44,14 @@ function showFurniture(aFurniture) {
 
         if(image.width < image.height){
             image.parentElement.classList.add("vertical");
+            image.classList.add("verticalPic");
         }
         else{
             image.parentElement.classList.add("horizontal");
+            image.classList.add("horizontalPic");
 
         }
-    })
+    });
 
     } else {
         clone.querySelector("img").remove()

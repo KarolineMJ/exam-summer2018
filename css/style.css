@@ -376,6 +376,13 @@ Web Version
         grid-column: 1/-1;
     }
 
+    .horizontalPic{
+        width: 100%;
+    }
+    .verticalPic{
+        width: 100%;
+    }
+
     .workInfo:hover .overlay {
         opacity: 0.9;
     }
