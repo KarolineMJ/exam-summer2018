@@ -218,6 +218,26 @@ footer {
     width: 10%;
 }
 
+
+/*      detailed product page       */
+
+.topImg {
+    width: 100vw;
+}
+
+.topSVG {
+    display: none;
+}
+
+.furnitureTitle {
+    text-align: center;
+    padding: 1.5em;
+}
+
+.furnitureDesc {
+    padding: 1.5em;
+}
+
 /*-----------------------------------------------------------------------------
 Web Version
 ----------------------------------------------------------------------------*/
@@ -339,6 +359,7 @@ Web Version
         position: absolute;
         height: 100vh;
         right: 0;
+        display: block;
     }
 
     .furnitureDesc {
@@ -364,15 +385,14 @@ Web Version
         background-color: #ECE7E7;
     }
 
-    .billedeBlok{
+    .billedeBlok {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
     }
 
-    .vertical{
-    }
-    .horizontal{
+    .vertical {}
+    .horizontal {
         grid-column: 1/-1;
     }
 
