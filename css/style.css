@@ -9,6 +9,10 @@
     font-family: "Ovink-Thin";
 }
 
+a {
+    color: black;
+}
+
 /*-----------------------------------------------------------------------------
 Mobile Version
 ----------------------------------------------------------------------------*/
@@ -238,6 +242,35 @@ footer {
     padding: 1.5em;
 }
 
+
+/*      about page      */
+
+.topprofileimage {
+    width: 150%;
+}
+
+.trapezAbout {
+    display: none;
+}
+
+.top-text-profile {
+    padding: 4em 2em 4em 2em;
+
+}
+
+.secondprofileimage {
+    width: 100vw;
+
+}
+
+.second-text {
+    padding: 4em 2em 4em 2em;
+}
+
+.collage img {
+    width: 100vw;
+}
+
 /*-----------------------------------------------------------------------------
 Web Version
 ----------------------------------------------------------------------------*/
@@ -396,10 +429,10 @@ Web Version
         grid-column: 1/-1;
     }
 
-    .horizontalPic{
+    .horizontalPic {
         width: 100%;
     }
-    .verticalPic{
+    .verticalPic {
         width: 100%;
     }
 
@@ -421,16 +454,10 @@ Web Version
     /*ABOUT PAGE*/
     .topprofileimage {
         position: absolute;
-        height: 99%;
-
-
-
+        width: 100vw;
     }
     .profilepic {
         position: relative;
-
-
-
 
     }
 
@@ -455,6 +482,7 @@ Web Version
     .trapezAbout {
         position: relative;
         height: 100%;
+        display: block;
 
 
 
@@ -464,6 +492,7 @@ Web Version
     .secondprofileimage {
         position: absolute;
         height: 100vh;
+        width: auto;
         right: 0;
 
     }
@@ -473,7 +502,12 @@ Web Version
         background-color: #EEEDEE;
         height: 100vh;
         display: grid;
+        grid-template-columns: 1fr 1fr;
 
+    }
+
+    .collage img {
+        width: auto;
     }
 
     .picture1 {
@@ -510,6 +544,7 @@ Web Version
         height: 20vh;
     }
 
+    /*   DETAILED PRODUCT PAGE   */
     .squaresSubpage {
         display: grid;
         grid-template-columns: 1fr 1fr;
