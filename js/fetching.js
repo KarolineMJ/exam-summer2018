@@ -1,15 +1,16 @@
 "use strict" // writes in the console if there is a mistake due to something is not defined
 let templateWork = document.querySelector(".workTemp").content;
+let billedeBlok = document.querySelector(".billedeBlok");
 
-let furniture =  document.querySelector("#furnitures");
-let page =1;
+let furniture = document.querySelector("#furnitures");
+let page = 1;
 let lookingForData = false;
 
 
 
 
-function fetchFunitures(){
-    lookingForData=true;
+function fetchFunitures() {
+    lookingForData = true;
 
     let urlParams = new URLSearchParams(window.location.search); //shows the id in the url
 
@@ -18,52 +19,40 @@ function fetchFunitures(){
     let endpoint = "http://www.kmjdesign.dk/m2/wordpress/wp-json/wp/v2/furniture/?_embed&per_page=30"
 
     fetch(endpoint)
-    .then(e => e.json())
-    .then(showFurnitures)
+        .then(e => e.json())
+        .then(showFurnitures)
 }
 
-function showFurnitures(data){
+function showFurnitures(data) {
     console.log(data);
     lookingForData = false;
     data.forEach(showFurniture);
 }
 
-function showFurniture(aFurniture){
+function showFurniture(aFurniture) {
     console.log("something")
     let clone = templateWork.cloneNode(true);
-    clone.querySelector(".text").textContent = aFurniture.title.rendered;
 
-    if(aFurniture.acf["product-page-image"]){
-        clone.querySelector("img").setAttribute("src", aFurniture.acf["product-page-image"].sizes.large)
+    if (aFurniture.acf["product-page-image"]) {
+        const img = clone.querySelector("img");
+        img.setAttribute("src", aFurniture.acf["product-page-image"].sizes.large);
 
-        let frontImages = document.querySelectorAll(".image");
-        let imageSec = document.querySelectorAll(".imageSec");
 
-        let imgHeight = frontImages.height;
-        let imgWidth = frontImages.width;
+        let frontImages = document.querySelectorAll(".productPic");
 
         frontImages.forEach(frontImage =>{
-        console.log(frontImage);
-        if(frontImage.width < frontImage.height){
+        if (frontImage.width < frontImage.height) {
             frontImage.classList.add("vertical");
-            }
-        if(frontImage.height < frontImage.width){
+        } else{
             frontImage.classList.add("horizontal");
         }
         });
-
-
-
-       }
-    else{
+    } else {
         clone.querySelector("img").remove()
     }
 
-clone.querySelector('.seeMore').href="detailed-work.html?id=" +aFurniture.id;
-furniture.appendChild(clone);
+    clone.querySelector('.seeMore').href = "detailed-work.html?id=" + aFurniture.id;
+    billedeBlok.appendChild(clone);
 }
 
 fetchFunitures();
-
-
-

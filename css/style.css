@@ -349,17 +349,16 @@ Web Version
       background-color: #ECE7E7;
     }
 
-
+    .billedeBlok{
+        display: grid;
+    }
 
     .vertical{
-        display: grid;
         grid-template-columns: 1fr 1fr;
         width: 50vw;
     }
     .horizontal{
-        display: grid;
         grid-template-columns: 1/-1;
-        width: 100%;
     }
 
     .workInfo:hover .overlay{
