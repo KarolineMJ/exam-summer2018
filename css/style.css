@@ -202,8 +202,21 @@ Mobile Version
     }
 }
 
+/*     footer      */
+
+footer {
+    background-image: url(../img/footer-img.png);
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 
 
+
+.soMe img {
+    width: 10%;
+}
 
 /*-----------------------------------------------------------------------------
 Web Version
@@ -351,17 +364,17 @@ Web Version
         background-color: #ECE7E7;
     }
 
-
-
-    .vertical {
+    .billedeBlok{
         display: grid;
+    }
+
+
+
         grid-template-columns: 1fr 1fr;
         width: 50vw;
     }
-    .horizontal {
-        display: grid;
+    .horizontal{
         grid-template-columns: 1/-1;
-        width: 100%;
     }
 
     .workInfo:hover .overlay {
@@ -378,8 +391,6 @@ Web Version
         -ms-transform: translate(-50%, -50%);
         text-align: center;
     }
-
-
 
     /*ABOUT PAGE*/
     .topprofileimage {
@@ -539,6 +550,10 @@ Web Version
     /* changing size of slideshow images */
     .mySlides img {
         width: 50%;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
