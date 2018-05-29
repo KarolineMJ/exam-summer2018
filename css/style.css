@@ -136,7 +136,7 @@ Mobile Version
     text-decoration: none;
 }
 
-/* slideshow container */
+/*      MAIN  PAGE  SLIDESHOW    */
 
 .slideshow-container {
     max-width: 100%;
@@ -224,20 +224,10 @@ footer p {
     padding: 0.5em;
 }
 
-.contactMe {
-    margin: auto;
-    width: 50%;
-}
 
 .collabMe img {
     width: 15%;
     padding: 1em;
-}
-
-.soMe {
-    left: 0em;
-    bottom: 0em;
-    margin: auto;
 }
 
 .soMe img {
@@ -269,7 +259,7 @@ footer p {
 /*      detailed product page       */
 
 .topImg {
-    width: 100vw;
+    width: 130vw;
 }
 
 .topSVG {
@@ -282,16 +272,37 @@ footer p {
 }
 
 .furnitureDesc {
-    padding: 1.5em;
+    padding: 2em;
+}
+
+.sideImg {
+    width: 100%;
+}
+
+
+.squaresSubpage {
+    background-color: #ECE7E7;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .squaresSubpage img {
     width: 100%;
 }
 
-.sideImg {
-    width: 100%;
+
+.leftWord {
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
 }
+
+.rightWord {
+    justify-self: center;
+    align-self: center;
+}
+
+
 
 
 /*      about page      */
@@ -327,6 +338,7 @@ Web Version
 ----------------------------------------------------------------------------*/
 
 @media screen and (min-width: 580px) {
+
 
 
     .containerWeb {
@@ -469,6 +481,8 @@ Web Version
         background-color: #ECE7E7;
     }
 
+
+    /*     PRODUCT    PAGE    */
     .billedeBlok {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -510,8 +524,9 @@ Web Version
     /*ABOUT PAGE*/
     .topprofileimage {
         position: absolute;
-        width: 100vw;
+        width: 90vw;
     }
+
     .profilepic {
         position: relative;
 
@@ -522,26 +537,17 @@ Web Version
         right: 30px;
         left: 70vw;
         top: 30vh;
-
-
     }
-
 
     .secondpic {
         position: relative;
         height: 100vh;
-
-
-
     }
 
     .trapezAbout {
         position: relative;
         height: 100%;
         display: block;
-
-
-
     }
 
 
@@ -553,46 +559,38 @@ Web Version
 
     }
 
-
     .collage {
         background-color: #EEEDEE;
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 2em;
+        padding: 1em;
         grid-gap: 2%;
     }
 
     .collage img {
         width: 100%;
-        padding: 1em;
+        padding: 0.5em 0em 0.5em 0em;
     }
 
-    .picture5 {
-        grid-column: 1;
-    }
+
 
 
     /*   DETAILED PRODUCT PAGE   */
     .squaresSubpage {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         background-color: #ECE7E7;
-
-    }
-
-    .leftWord {
-        justify-self: center;
-        align-self: center;
-    }
-
-    .rightWord {
-        justify-self: center;
-        align-self: center;
     }
 
     .squaresSubpage img {
         width: 50vw;
     }
+
+    .firstSquareImg {
+        grid-row: 1;
+    }
+
 
     .topSubpage {
         position: relative;
@@ -641,7 +639,9 @@ Web Version
         width: 50%;
     }
 
-    /*     footer    */
+
+
+    /*     FOOTER    */
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
