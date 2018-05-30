@@ -24,4 +24,24 @@ function showOneFurniture(aChair) {
     document.querySelector(".furnitureDesc").innerHTML = aChair.content.rendered;
 
 
+    //get optional image 1
+
+
+    if (aChair.acf["optional_image_1"]) {
+        document.querySelector(".optionalImage1").setAttribute("src", aChair.acf["optional_image_1"].sizes.large);
+
+    } else {
+        document.querySelector(".optionalImage1").remove()
+    }
+
+
+    //get optional image 2
+    if (aChair.acf["optional_image_2"]) {
+        document.querySelector(".optionalImage2").setAttribute("src", aChair.acf["optional_image_2"].sizes.large);
+
+    } else {
+        document.querySelector(".optionalImage2").remove()
+    }
+
+
 }

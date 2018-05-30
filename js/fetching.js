@@ -60,6 +60,9 @@ function showFurniture(aFurniture) {
         clone.querySelector("img").remove()
     }
 
+
+
+
     //get detailed product page
 
     clone.querySelector('.seeMore').href = "detailed-work.html?id=" + aFurniture.id;
