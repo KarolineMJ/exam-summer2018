@@ -319,6 +319,19 @@ footer p {
     grid-row: 1;
 }
 
+.optionalSubpage {
+    padding: 3em;
+
+}
+
+.optionalSubpage img {
+    width: 100%;
+}
+
+.optionalImage1 {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
@@ -636,7 +649,11 @@ Web Version
         position: relative;
         height: 70vh;
     }
+    .optionalSubpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
+    }
 
 
 
