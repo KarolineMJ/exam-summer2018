@@ -11,6 +11,7 @@
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 /*-----------------------------------------------------------------------------
@@ -136,10 +137,39 @@ Mobile Version
     text-decoration: none;
 }
 
+/*     footer      */
+
+footer {
+    background-color: #EEEDEE;
+    bottom: 0;
+    padding: 1em;
+}
+
+footer h1 {
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: auto;
+}
+
+footer p {
+    padding: 0.5em;
+}
+
+
+.collabMe img {
+    width: 15%;
+    padding: 1em;
+}
+
+.soMe img {
+    width: 8%;
+    padding: 1em;
+}
+
 /*      MAIN  PAGE  SLIDESHOW    */
 
 .slideshow-container {
-    max-width: 100%;
+    width: 100vw;
     margin: auto;
 
     /* make the images go to lower left corner*/
@@ -148,16 +178,15 @@ Mobile Version
     bottom: 0em;
 }
 
-/* Hide the images by default */
 
 .mySlides {
     display: none;
 }
 
-/* slide images */
 
 .mySlides img {
     width: 90%;
+
 }
 
 /* furniture title and caption */
@@ -206,41 +235,15 @@ Mobile Version
     }
 }
 
-/*     footer      */
-
-footer {
-    background-color: #EEEDEE;
-    bottom: 0;
-    padding: 1em;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-}
-
-footer h1 {
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin: auto;
-}
-
-footer p {
-    padding: 0.5em;
-}
-
-
-.collabMe img {
-    width: 15%;
-    padding: 1em;
-}
-
-.soMe img {
-    width: 8%;
-    padding: 1em;
-}
 
 /*      PRODUCT PAGE                */
+
+.productTitle {
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5em;
+    padding: 1em;
+}
 
 .billedeBlok {
     width: 90%;
@@ -286,7 +289,6 @@ footer p {
 
 }
 
-
 .squaresSubpage {
     background-color: #ECE7E7;
     display: grid;
@@ -303,7 +305,6 @@ footer p {
     font-size: 1.3em;
 
 }
-
 
 .leftWord {
     grid-row: 1;
@@ -347,7 +348,6 @@ Web Version
 @media screen and (min-width: 580px) {
 
 
-
     .containerWeb {
         display: block;
     }
@@ -363,17 +363,7 @@ Web Version
         padding: 1.5em;
     }
 
-    .topImg {
-        width: 70vw;
-        position: absolute;
-    }
-    .furnitureTitle {
-        align-self: center;
-        justify-self: center;
-        position: absolute;
-        right: 30px;
-        top: 30vh;
-    }
+
 
     /* burger menu */
     .burgerbutton {
@@ -490,6 +480,9 @@ Web Version
 
 
     /*     PRODUCT    PAGE    */
+    .productTitle {
+        display: none;
+    }
     .billedeBlok {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -546,16 +539,20 @@ Web Version
         top: 30vh;
     }
 
+
     .secondpic {
         position: relative;
         height: 100vh;
     }
 
+
     .trapezAbout {
         position: relative;
-        height: 100%;
+        width: 100%;
         display: block;
     }
+
+
 
 
     .secondprofileimage {
@@ -563,8 +560,8 @@ Web Version
         height: 100vh;
         width: auto;
         right: 0;
-
     }
+
 
     .collage {
         background-color: #EEEDEE;
@@ -584,6 +581,17 @@ Web Version
 
 
     /*   DETAILED PRODUCT PAGE   */
+    .topImg {
+        width: 70vw;
+        position: absolute;
+    }
+    .furnitureTitle {
+        align-self: center;
+        justify-self: center;
+        position: absolute;
+        right: 30px;
+        top: 30vh;
+    }
     .squaresSubpage {
         display: grid;
         grid-template-rows: 1fr 1fr;

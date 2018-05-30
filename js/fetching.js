@@ -33,29 +33,34 @@ function showFurniture(aFurniture) {
     console.log("something")
     let clone = templateWork.cloneNode(true);
 
+    //get title
+    clone.querySelector(".productTitle").innerHTML = aFurniture.title.rendered;
+
+    //get images
     if (aFurniture.acf["product-page-image"]) {
         const img = clone.querySelector("img");
         img.setAttribute("src", aFurniture.acf["product-page-image"].sizes.large);
 
-        img.addEventListener("load", (e)=>{
-        const image = e.target;
-        console.log("height", image.height, image.parentElement);
+        img.addEventListener("load", (e) => {
+            const image = e.target;
+            console.log("height", image.height, image.parentElement);
 
 
-        if(image.width < image.height){
-            image.parentElement.classList.add("vertical");
-            image.classList.add("verticalPic");
-        }
-        else{
-            image.parentElement.classList.add("horizontal");
-            image.classList.add("horizontalPic");
+            if (image.width < image.height) {
+                image.parentElement.classList.add("vertical");
+                image.classList.add("verticalPic");
+            } else {
+                image.parentElement.classList.add("horizontal");
+                image.classList.add("horizontalPic");
 
-        }
-    });
+            }
+        });
 
     } else {
         clone.querySelector("img").remove()
     }
+
+    //get detailed product page
 
     clone.querySelector('.seeMore').href = "detailed-work.html?id=" + aFurniture.id;
     billedeBlok.appendChild(clone);
@@ -65,16 +70,16 @@ function showFurniture(aFurniture) {
 
 
 
-/*
-        frontImages.forEach(frontImage =>{
-        if (frontImage.width < frontImage.height) {
-            frontImage.parentElement.classList.add("vertical");
-        } else{
-            frontImage.parentElement.classList.add("horizontal");
-        }
-        });
+    /*
+            frontImages.forEach(frontImage =>{
+            if (frontImage.width < frontImage.height) {
+                frontImage.parentElement.classList.add("vertical");
+            } else{
+                frontImage.parentElement.classList.add("horizontal");
+            }
+            });
 
-        */
+            */
 }
 
 fetchFunitures();
