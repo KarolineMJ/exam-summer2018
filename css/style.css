@@ -92,6 +92,7 @@ Mobile Version
 
 .containerMob {
     height: 50px;
+    padding-bottom: 1em;
     display: grid;
     grid-template-areas: ' logo burger';
     grid-template-columns: 0.5fr 120px;
@@ -99,7 +100,8 @@ Mobile Version
     align-items: center;
     position: fixed;
     z-index: 900;
-
+    /* while scrolling up the background disappears by easing */
+    transition: 1s ease;
 }
 
 .navbarSmall {
@@ -135,6 +137,12 @@ Mobile Version
     display: inline-block;
     padding: 10px;
     text-decoration: none;
+}
+
+.navScroll {
+    /* adds a white background to navbar while scrolling*/
+    background: rgba(255, 255, 255, 0.9);
+    transition: 1s ease;
 }
 
 /*     footer      */
@@ -666,5 +674,6 @@ Web Version
     .soMe img {
         width: 5%;
     }
+
 
 }

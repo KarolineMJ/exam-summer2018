@@ -9,15 +9,26 @@ burgermenuMob.addEventListener('click', openSmallMenu);
 burgermenu.addEventListener('click', openMenu);
 
 
-function openMenu(){
+function openMenu() {
     burgermenu.classList.toggle('active');
     console.log("something happened");
     navbarBig.classList.toggle('enabled');
 }
 
 
-function openSmallMenu(){
+function openSmallMenu() {
     burgermenuMob.classList.toggle('active');
     navbarSmall.classList.toggle('show');
 
+}
+
+//add background to nav while scrolling
+window.onscroll = function () {
+    console.log("background appears")
+    let navScrolling = document.querySelector('.containerMob');
+    if (window.pageYOffset > 100) {
+        navScrolling.classList.add("navScroll");
+    } else {
+        navScrolling.classList.remove("navScroll");
+    }
 }
