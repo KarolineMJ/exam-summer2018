@@ -212,6 +212,11 @@ footer {
     background-color: #EEEDEE;
     bottom: 0;
     padding: 1em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
 }
 
 footer h1 {
@@ -235,7 +240,7 @@ footer p {
     padding: 1em;
 }
 
-/*      product page                */
+/*      PRODUCT PAGE                */
 
 .billedeBlok {
     width: 90%;
@@ -256,7 +261,7 @@ footer p {
 
 
 
-/*      detailed product page       */
+/*      DETAILED PRODUCT PAGE      */
 
 .topImg {
     width: 130vw;
@@ -276,7 +281,9 @@ footer p {
 }
 
 .sideImg {
-    width: 100%;
+    width: 45%;
+    padding-left: 60%;
+
 }
 
 
@@ -290,22 +297,22 @@ footer p {
     width: 100%;
 }
 
+.squaresSubpage p {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.3em;
+
+}
+
 
 .leftWord {
     grid-row: 1;
-    justify-self: center;
-    align-self: center;
-}
-
-.rightWord {
-    justify-self: center;
-    align-self: center;
 }
 
 
 
 
-/*      about page      */
+/*      ABOUT PAGE      */
 
 .topprofileimage {
     width: 150%;
