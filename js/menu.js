@@ -25,10 +25,14 @@ function openSmallMenu() {
 //add background to nav while scrolling
 window.onscroll = function () {
     console.log("background appears")
-    let navScrolling = document.querySelector('.containerMob');
+    let navScrollMob = document.querySelector('.containerMob');
+    let navScrollWeb = document.querySelector('.containerWeb');
     if (window.pageYOffset > 100) {
-        navScrolling.classList.add("navScroll");
+        navScrollMob.classList.add("navScroll");
+        navScrollWeb.classList.add("navScroll");
+
     } else {
-        navScrolling.classList.remove("navScroll");
+        navScrollMob.classList.remove("navScroll");
+        navScrollWeb.classList.remove("navScroll");
     }
 }

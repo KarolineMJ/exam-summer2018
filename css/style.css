@@ -355,25 +355,32 @@ Web Version
 
 @media screen and (min-width: 580px) {
 
-
-    .containerWeb {
-        display: block;
-    }
-
-
-    .containerMob {
-        display: none;
-    }
-
-    /* logo  */
+    /* logo */
     .containerWeb img {
         width: 12em;
         padding: 1.5em;
     }
 
 
-
     /* burger menu */
+    .containerMob {
+        display: none;
+    }
+
+    .containerWeb {
+        display: block;
+        z-index: 400;
+        display: grid;
+        grid-template-areas: '. logo burger';
+        grid-template-columns: 0.5fr 1fr 70px;
+        width: 100vw;
+        align-items: center;
+        position: fixed;
+        /* while scrolling up the background disappears by easing */
+        transition: 1s ease;
+
+    }
+
     .burgerbutton {
         margin-top: 20px;
         z-index: 10;
@@ -445,6 +452,12 @@ Web Version
         padding: 10px;
         text-decoration: none;
     }
+
+
+    .enabled {
+        display: block;
+    }
+
 
     .middleSubpage {
         display: grid;
@@ -621,28 +634,9 @@ Web Version
     }
 
 
-    .containerWeb {
-        z-index: 400;
-        display: grid;
-        grid-template-areas: '. logo burger';
-        grid-template-columns: 0.5fr 1fr 70px;
-        width: 100vw;
-        align-items: center;
-        position: fixed;
-
-    }
-
-    .logo {
-        padding-left: 10px;
 
 
-    }
-
-    .enabled {
-        display: block;
-    }
-
-
+    /*       MAIN PAGE     */
     /* changing position of furniture text frontpage */
     .slideText {
         bottom: 10em;
