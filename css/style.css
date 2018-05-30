@@ -113,6 +113,7 @@ Mobile Version
 }
 
 .navbarText {
+    font-size: 3em;
     background-color: #e9e9e9;
     width: 100vw;
     height: 100vh;
@@ -431,6 +432,9 @@ Web Version
         transform: rotate(45deg);
     }
 
+    .navbarBig {
+        font-size: 1.2em;
+    }
 
     nav ul {
         list-style-type: none;
