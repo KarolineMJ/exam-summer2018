@@ -113,15 +113,16 @@ Mobile Version
 }
 
 .navbarText {
-    font-size: 3em;
+    font-size: 2.5em;
     background-color: #e9e9e9;
     width: 100vw;
     height: 100vh;
-    position: relative;
+    position: fixed;
     z-index: 800;
     display: grid;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
 }
 
@@ -165,10 +166,7 @@ footer p {
 }
 
 
-.collabMe img {
-    width: 15%;
-    padding: 1em;
-}
+
 
 .soMe img {
     width: 8%;
@@ -180,9 +178,9 @@ footer p {
 .slideshow-container {
     width: 100vw;
     margin: auto;
-
+    height: 100vh;
     /* make the images go to lower left corner*/
-    position: absolute;
+    position: relative;
     left: 0em;
     bottom: 0em;
 }
@@ -190,6 +188,8 @@ footer p {
 
 .mySlides {
     display: none;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -681,13 +681,24 @@ Web Version
 
     /*     FOOTER    */
     footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+
     }
 
+    .footSpons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footSponsHead{
+        grid-column: 1/-1;
+    }
 
     .soMe img {
         width: 5%;
+    }
+
+    .footCont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 
