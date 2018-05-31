@@ -100,8 +100,7 @@ Mobile Version
     align-items: center;
     position: fixed;
     z-index: 900;
-    /* while scrolling up the background disappears by easing */
-    transition: 1s ease;
+
 }
 
 .navbarSmall {
@@ -181,20 +180,22 @@ footer p {
     height: 100vh;
     /* make the images go to lower left corner*/
     position: relative;
-    left: 0em;
-    bottom: 0em;
+    left: 0;
+    bottom: 0;
 }
 
 
 .mySlides {
     display: none;
     position: absolute;
-    bottom: 0;
+    bottom: -0.5%;
 }
+
 
 
 .mySlides img {
     width: 90%;
+
 
 }
 
@@ -228,6 +229,7 @@ footer p {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 3s;
+
 }
 
 
@@ -390,8 +392,7 @@ Web Version
         width: 100vw;
         align-items: center;
         position: fixed;
-        /* while scrolling up the background disappears by easing */
-        transition: 1s ease;
+
 
     }
 
@@ -680,15 +681,13 @@ Web Version
 
 
     /*     FOOTER    */
-    footer {
+    footer {}
 
-    }
-
-    .footSpons{
+    .footSpons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .footSponsHead{
+    .footSponsHead {
         grid-column: 1/-1;
     }
 
@@ -696,7 +695,7 @@ Web Version
         width: 5%;
     }
 
-    .footCont{
+    .footCont {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
