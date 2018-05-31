@@ -9,6 +9,11 @@
     font-family: "Ovink-Thin";
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 /*-----------------------------------------------------------------------------
 Mobile Version
 ----------------------------------------------------------------------------*/
@@ -87,6 +92,7 @@ Mobile Version
 
 .containerMob {
     height: 50px;
+    padding-bottom: 1em;
     display: grid;
     grid-template-areas: ' logo burger';
     grid-template-columns: 0.5fr 120px;
@@ -94,7 +100,8 @@ Mobile Version
     align-items: center;
     position: fixed;
     z-index: 900;
-
+    /* while scrolling up the background disappears by easing */
+    transition: 1s ease;
 }
 
 .navbarSmall {
@@ -106,6 +113,7 @@ Mobile Version
 }
 
 .navbarText {
+    font-size: 3em;
     background-color: #e9e9e9;
     width: 100vw;
     height: 100vh;
@@ -132,10 +140,45 @@ Mobile Version
     text-decoration: none;
 }
 
-/* slideshow container */
+.navScroll {
+    /* adds a white background to navbar while scrolling*/
+    background: rgba(255, 255, 255, 0.9);
+    transition: 1s ease;
+}
+
+/*     footer      */
+
+footer {
+    background-color: #EEEDEE;
+    bottom: 0;
+    padding: 1em;
+}
+
+footer h1 {
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: auto;
+}
+
+footer p {
+    padding: 0.5em;
+}
+
+
+.collabMe img {
+    width: 15%;
+    padding: 1em;
+}
+
+.soMe img {
+    width: 8%;
+    padding: 1em;
+}
+
+/*      MAIN  PAGE  SLIDESHOW    */
 
 .slideshow-container {
-    max-width: 100%;
+    width: 100vw;
     margin: auto;
 
     /* make the images go to lower left corner*/
@@ -144,16 +187,15 @@ Mobile Version
     bottom: 0em;
 }
 
-/* Hide the images by default */
 
 .mySlides {
     display: none;
 }
 
-/* slide images */
 
 .mySlides img {
     width: 90%;
+
 }
 
 /* furniture title and caption */
@@ -202,27 +244,39 @@ Mobile Version
     }
 }
 
-/*     footer      */
 
-footer {
-    background-image: url(../img/footer-img.png);
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/*      PRODUCT PAGE                */
 
+.productTitle {
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.billedeBlok {
+    width: 90%;
+    margin: auto;
+    padding-top: 5em;
+}
+
+.horizontalPic {
+    width: 100%;
+    padding-bottom: 1em;
+
+}
+
+.verticalPic {
+    width: 100%;
+    padding-bottom: 1em;
 }
 
 
 
-.soMe img {
-    width: 10%;
-}
-
-
-/*      detailed product page       */
+/*      DETAILED PRODUCT PAGE      */
 
 .topImg {
-    width: 100vw;
+    width: 130vw;
 }
 
 .topSVG {
@@ -235,7 +289,78 @@ footer {
 }
 
 .furnitureDesc {
-    padding: 1.5em;
+    padding: 2em;
+}
+
+.sideImg {
+    width: 45%;
+    padding-left: 60%;
+
+}
+
+.squaresSubpage {
+    background-color: #ECE7E7;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.squaresSubpage img {
+    width: 100%;
+}
+
+.squaresSubpage p {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.3em;
+
+}
+
+.leftWord {
+    grid-row: 1;
+}
+
+.optionalSubpage {
+    padding: 3em;
+
+}
+
+.optionalSubpage img {
+    width: 100%;
+}
+
+.optionalImage1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*      ABOUT PAGE      */
+
+.topprofileimage {
+    width: 150%;
+}
+
+.trapezAbout {
+    display: none;
+}
+
+.top-text-profile {
+    padding: 4em 2em 4em 2em;
+
+}
+
+.secondprofileimage {
+    width: 100vw;
+
+}
+
+.second-text {
+    padding: 4em 2em 4em 2em;
+}
+
+.collage img {
+    width: 100vw;
 }
 
 /*-----------------------------------------------------------------------------
@@ -244,35 +369,32 @@ Web Version
 
 @media screen and (min-width: 580px) {
 
-
-    .containerWeb {
-        display: block;
-    }
-
-
-    .containerMob {
-        display: none;
-    }
-
-    /* logo  */
+    /* logo */
     .containerWeb img {
         width: 12em;
         padding: 1.5em;
     }
 
-    .topImg {
-        width: 70vw;
-        position: absolute;
-    }
-    .furnitureTitle {
-        align-self: center;
-        justify-self: center;
-        position: absolute;
-        right: 30px;
-        top: 30vh;
-    }
 
     /* burger menu */
+    .containerMob {
+        display: none;
+    }
+
+    .containerWeb {
+        display: block;
+        z-index: 400;
+        display: grid;
+        grid-template-areas: '. logo burger';
+        grid-template-columns: 0.5fr 1fr 70px;
+        width: 100vw;
+        align-items: center;
+        position: fixed;
+        /* while scrolling up the background disappears by easing */
+        transition: 1s ease;
+
+    }
+
     .burgerbutton {
         margin-top: 20px;
         z-index: 10;
@@ -323,6 +445,9 @@ Web Version
         transform: rotate(45deg);
     }
 
+    .navbarBig {
+        font-size: 1.2em;
+    }
 
     nav ul {
         list-style-type: none;
@@ -345,6 +470,12 @@ Web Version
         text-decoration: none;
     }
 
+
+    .enabled {
+        display: block;
+    }
+
+
     .middleSubpage {
         display: grid;
         grid-template-columns: 50vw 50vw;
@@ -352,12 +483,12 @@ Web Version
     }
     .sideImg {
         justify-self: end;
-        height: 70vh;
+        width: 50vw;
 
     }
     .topSVG {
         position: absolute;
-        height: 100vh;
+        width: 100vw;
         right: 0;
         display: block;
     }
@@ -385,10 +516,19 @@ Web Version
         background-color: #ECE7E7;
     }
 
+
+    /*     PRODUCT    PAGE    */
+    .productTitle {
+        display: none;
+    }
     .billedeBlok {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
+        width: 50%;
+        grid-gap: 1.5em;
+        padding: 1em;
+        margin: auto;
+        padding-top: 5em;
     }
 
     .vertical {}
@@ -396,10 +536,11 @@ Web Version
         grid-column: 1/-1;
     }
 
-    .horizontalPic{
+    .horizontalPic {
         width: 100%;
+
     }
-    .verticalPic{
+    .verticalPic {
         width: 100%;
     }
 
@@ -421,16 +562,11 @@ Web Version
     /*ABOUT PAGE*/
     .topprofileimage {
         position: absolute;
-        height: 99%;
-
-
-
+        width: 90vw;
     }
+
     .profilepic {
         position: relative;
-
-
-
 
     }
 
@@ -439,126 +575,89 @@ Web Version
         right: 30px;
         left: 70vw;
         top: 30vh;
-
-
     }
 
 
     .secondpic {
         position: relative;
         height: 100vh;
-
-
-
     }
+
 
     .trapezAbout {
         position: relative;
-        height: 100%;
-
-
-
+        width: 100%;
+        display: block;
     }
+
+
 
 
     .secondprofileimage {
         position: absolute;
         height: 100vh;
+        width: auto;
         right: 0;
-
     }
 
 
     .collage {
         background-color: #EEEDEE;
-        height: 100vh;
-        display: grid;
-
-    }
-
-    .picture1 {
-        grid-column: 1;
-        grid-row: 1;
-        height: 20vh;
-
-
-    }
-
-    .picture2 {
-        grid-column: 2;
-        grid-row: 1/3;
-        height: 20vh;
-
-    }
-
-    .picture3 {
-        grid-column: 1;
-        grid-row: 2/-1;
-        height: 20vh;
-
-    }
-
-    .picture4 {
-        grid-column: 2;
-        grid-row: 3;
-        height: 20vh;
-    }
-
-    .picture5 {
-        grid-column: 2;
-        grid-row: 4;
-        height: 20vh;
-    }
-
-    .squaresSubpage {
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 1em;
+        grid-gap: 2%;
+    }
+
+    .collage img {
+        width: 100%;
+        padding: 0.5em 0em 0.5em 0em;
+    }
+
+
+
+
+    /*   DETAILED PRODUCT PAGE   */
+    .topImg {
+        width: 70vw;
+        position: absolute;
+    }
+    .furnitureTitle {
+        align-self: center;
+        justify-self: center;
+        position: absolute;
+        right: 30px;
+        top: 30vh;
+    }
+    .squaresSubpage {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
         background-color: #ECE7E7;
-
-    }
-
-    .leftWord {
-        justify-self: center;
-        align-self: center;
-    }
-
-    .rightWord {
-        justify-self: center;
-        align-self: center;
     }
 
     .squaresSubpage img {
         width: 50vw;
     }
 
+    .firstSquareImg {
+        grid-row: 1;
+    }
+
+
     .topSubpage {
         position: relative;
-        height: 90vh;
+        height: 70vh;
     }
-
-
-    .containerWeb {
-        z-index: 400;
+    .optionalSubpage {
         display: grid;
-        grid-template-areas: '. logo burger';
-        grid-template-columns: 0.5fr 1fr 70px;
-        width: 100vw;
-        align-items: center;
-        position: fixed;
+        grid-template-columns: 1fr 1fr;
 
     }
 
-    .logo {
-        padding-left: 10px;
 
 
-    }
-
-    .enabled {
-        display: block;
-    }
-
-
+    /*       MAIN PAGE     */
     /* changing position of furniture text frontpage */
     .slideText {
         bottom: 10em;
@@ -578,8 +677,18 @@ Web Version
         width: 50%;
     }
 
+
+
+    /*     FOOTER    */
     footer {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
+
+
+    .soMe img {
+        width: 5%;
+    }
+
 
 }
