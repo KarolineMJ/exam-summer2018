@@ -3,6 +3,9 @@ let burgermenu = document.querySelector(".burgerbutton");
 let navbarBig = document.querySelector(".navbarBig");
 let navbarSmall = document.querySelector(".navbarSmall");
 let burgermenuMob = document.querySelector(".burgerbuttonMob");
+let navScrollMob = document.querySelector('.containerMob');
+    let navScrollWeb = document.querySelector('.containerWeb');
+
 
 
 burgermenuMob.addEventListener('click', openSmallMenu);
@@ -19,16 +22,15 @@ function openMenu() {
 function openSmallMenu() {
     burgermenuMob.classList.toggle('active');
     navbarSmall.classList.toggle('show');
+    navScrollMob.classList.remove("navScroll");
+
+
 
 }
 
 //add background to nav while scrolling
 window.onscroll = function () {
-    console.log(pageYOffset);
-    console.log("background appears");
-    let navScrollMob = document.querySelector('.containerMob');
-    let navScrollWeb = document.querySelector('.containerWeb');
-    if (window.pageYOffset > 50) {
+     if (window.pageYOffset > 50) {
         navScrollMob.classList.add("navScroll");
         navScrollWeb.classList.add("navScroll");
 
