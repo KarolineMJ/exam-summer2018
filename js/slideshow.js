@@ -14,16 +14,6 @@ function showSlides(data) {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 
-    data.forEach("fadeEnding");
 
 
-}
-
-function fadeEnding() {
-    console.log("Something happening");
-
-    if (i <= 5000) {
-        slides.classList.add("fadeOut");
-
-    }
 }
