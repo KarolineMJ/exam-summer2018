@@ -276,6 +276,10 @@ footer p {
 
 /*      PRODUCT PAGE                */
 
+.text {
+    display: none;
+}
+
 .productTitle {
     text-align: center;
     font-weight: 100;
@@ -313,6 +317,11 @@ footer p {
 .furnitureTitle {
     text-align: center;
     padding: 1.5em;
+}
+
+.furnitureYear {
+    text-align: center;
+    color: gray;
 }
 
 .furnitureDesc {
@@ -555,6 +564,7 @@ Web Version
     }
 
     .text {
+        display: block;
         font-size: 30px;
         position: absolute;
         top: 50%;
@@ -665,8 +675,16 @@ Web Version
         align-self: center;
         justify-self: center;
         position: absolute;
-        right: 30px;
+        right: 40px;
         top: 30vh;
+    }
+
+    .furnitureYear {
+        align-self: center;
+        justify-self: center;
+        position: absolute;
+        right: 90px;
+        top: 40vh;
     }
     .squaresSubpage {
         display: grid;

@@ -20,8 +20,21 @@ function showOneFurniture(aChair) {
     document.querySelector(".sideImg").setAttribute("src", aChair.acf["image-side"].sizes.large);
 
     document.querySelector(".furnitureTitle").textContent = aChair.title.rendered;
+
+    document.querySelector(".furnitureYear").textContent = aChair.acf.year;
+
     document.querySelector(".leftWord").textContent = aChair.acf["word-right"];
     document.querySelector(".furnitureDesc").innerHTML = aChair.content.rendered;
+
+    //get photographer
+
+    if (aChair.acf.photographer) {
+        document.querySelector(".furnitureGraph span").textContent = aChair.acf.photographer;
+
+    } else {
+        document.querySelector(".furnitureGraph").remove()
+    }
+
 
 
     //get optional image 1
