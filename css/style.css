@@ -154,23 +154,43 @@ footer {
     padding: 1em;
 }
 
+.footCont {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.footContactInfo {
+    grid-row: 1;
+}
+
+
+.footerPic {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 footer h1 {
     font-size: 1.2em;
     padding: 0.5em;
     margin: auto;
+    text-align: center;
 }
 
 footer p {
     padding: 0.5em;
 }
 
-    .footSpons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .footSponsHead {
-        grid-column: 1/-1;
-    }
+.footSpons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footSponsHead {
+    grid-column: 1/-1;
+}
 
 
 
@@ -709,13 +729,13 @@ Web Version
         margin-bottom: 4vh;
     }
 
-    .footerPic{
+    .footerPic {
         width: 10vw;
     }
-    hr{
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,0.6), rgba(192,192,192,0));
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.6), rgba(192, 192, 192, 0));
     }
 
 }
