@@ -164,6 +164,13 @@ footer p {
     padding: 0.5em;
 }
 
+    .footSpons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footSponsHead {
+        grid-column: 1/-1;
+    }
 
 
 
@@ -686,6 +693,7 @@ Web Version
     .footSpons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 4vh;
     }
     .footSponsHead {
         grid-column: 1/-1;
@@ -697,8 +705,17 @@ Web Version
 
     .footCont {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 4vh;
     }
 
+    .footerPic{
+        width: 10vw;
+    }
+    hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,0.6), rgba(192,192,192,0));
+    }
 
 }
