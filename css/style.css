@@ -146,6 +146,8 @@ Mobile Version
     transition: 1s ease;
 }
 
+
+
 /*     footer      */
 
 footer {
@@ -314,7 +316,7 @@ footer p {
 /*      DETAILED PRODUCT PAGE      */
 
 .topImg {
-    width: 130vw;
+    width: 100vw;
 }
 
 .topSVG {
@@ -404,6 +406,62 @@ footer p {
 
 .collage img {
     width: 100vw;
+}
+
+@media screen and (max-width: 580px) {
+    /* back btn */
+    .cta {
+        width: 150px;
+        position: relative;
+        bottom: 10px;
+        right: 0;
+        margin: auto;
+        margin-right: 8px;
+        padding: 19px 22px;
+        transition: all 0.2s ease;
+    }
+
+    .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 0px;
+        width: 56px;
+        height: 56px;
+        transition: all 0.3s ease;
+    }
+
+    .cta span {
+        position: relative;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 900;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    .backArrow {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #111;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+        width: 11px;
+    }
+
+    .cta {
+        width: 160px;
+        background: #ECE7E7;
+    }
+
 }
 
 /*-----------------------------------------------------------------------------
