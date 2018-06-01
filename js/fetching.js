@@ -35,6 +35,7 @@ function showFurniture(aFurniture) {
 
     //get title
     clone.querySelector(".productTitle").innerHTML = aFurniture.title.rendered;
+    clone.querySelector(".text").innerHTML = aFurniture.title.rendered;
 
     //get images
     if (aFurniture.acf["product-page-image"]) {
@@ -44,7 +45,13 @@ function showFurniture(aFurniture) {
         img.addEventListener("load", (e) => {
             const image = e.target;
             console.log("height", image.height, image.parentElement);
+            img.onmouseover = function () {
+                mouseOver()
+            };
 
+            function mouseOver() {
+                img.classList.add("overlay");
+            }
 
             if (image.width < image.height) {
                 image.parentElement.classList.add("vertical");

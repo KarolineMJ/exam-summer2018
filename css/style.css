@@ -164,13 +164,14 @@ footer p {
     padding: 0.5em;
 }
 
-    .footSpons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .footSponsHead {
-        grid-column: 1/-1;
-    }
+.footSpons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footSponsHead {
+    grid-column: 1/-1;
+}
 
 
 
@@ -271,13 +272,11 @@ footer p {
 
 .horizontalPic {
     width: 100%;
-    padding-bottom: 1em;
 
 }
 
 .verticalPic {
     width: 100%;
-    padding-bottom: 1em;
 }
 
 
@@ -517,19 +516,42 @@ Web Version
     .overlay {
         position: absolute;
         top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         height: 100%;
         width: 100%;
         opacity: 0;
+        margin: 0;
         transition: .5s ease;
-        background-color: #ECE7E7;
+        background-color: #ffffff;
     }
 
+    .seeMore:hover .overlay {
+        opacity: 0.9;
+    }
+
+    .seeMore {
+        position: relative;
+    }
+
+    .text {
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        font-weight: 700;
+    }
 
     /*     PRODUCT    PAGE    */
     .productTitle {
         display: none;
     }
     .billedeBlok {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 50%;
@@ -554,17 +576,6 @@ Web Version
 
     .workInfo:hover .overlay {
         opacity: 0.9;
-    }
-
-    .text {
-        color: #000000;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
     }
 
     /*ABOUT PAGE*/
@@ -709,13 +720,13 @@ Web Version
         margin-bottom: 4vh;
     }
 
-    .footerPic{
+    .footerPic {
         width: 10vw;
     }
-    hr{
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,0.6), rgba(192,192,192,0));
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.6), rgba(192, 192, 192, 0));
     }
 
 }
