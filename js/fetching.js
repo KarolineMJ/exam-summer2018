@@ -6,16 +6,11 @@ let furniture = document.querySelector("#furnitures");
 let page = 1;
 let lookingForData = false;
 
-
-
-
 function fetchFunitures() {
     lookingForData = true;
 
     let urlParams = new URLSearchParams(window.location.search); //shows the id in the url
-
     let catid = urlParams.get("");
-
     let endpoint = "http://www.kmjdesign.dk/m2/wordpress/wp-json/wp/v2/furniture/?_embed&per_page=30"
 
     fetch(endpoint)
@@ -28,7 +23,6 @@ function showFurnitures(data) {
     lookingForData = false;
     data.forEach(showFurniture);
 }
-
 
 function showFurniture(aFurniture) {
     console.log("something")
