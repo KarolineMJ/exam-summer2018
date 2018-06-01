@@ -45,3 +45,7 @@ function showOneFurniture(aChair) {
 
 
 }
+
+function goBack() {
+    window.history.back();
+}

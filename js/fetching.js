@@ -29,6 +29,7 @@ function showFurnitures(data) {
     data.forEach(showFurniture);
 }
 
+
 function showFurniture(aFurniture) {
     console.log("something")
     let clone = templateWork.cloneNode(true);
