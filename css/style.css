@@ -146,6 +146,8 @@ Mobile Version
     transition: 1s ease;
 }
 
+
+
 /*     footer      */
 
 footer {
@@ -314,7 +316,7 @@ footer p {
 /*      DETAILED PRODUCT PAGE      */
 
 .topImg {
-    width: 130vw;
+    width: 100vw;
 }
 
 .topSVG {
@@ -337,7 +339,7 @@ footer p {
 
 .sideImg {
     width: 45%;
-    padding-left: 60%;
+    padding-left: 55%;
 
 }
 
@@ -400,14 +402,73 @@ footer p {
 
 .second-text {
     padding: 4em 2em 4em 2em;
+    align-self: center;
 }
 
 .collage img {
     width: 100vw;
 }
 
+@media screen and (max-width: 580px) {
+    /* back btn */
+    .cta {
+        width: 150px;
+        position: relative;
+        bottom: 10px;
+        right: 0;
+        margin: auto;
+        margin-right: 8px;
+        padding: 19px 22px;
+        transition: all 0.2s ease;
+    }
+
+    .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 0px;
+        width: 56px;
+        height: 56px;
+        transition: all 0.3s ease;
+    }
+
+    .cta span {
+        position: relative;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 900;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    .backArrow {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #111;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+        width: 11px;
+    }
+
+    .cta {
+        width: 160px;
+        background: #ECE7E7;
+    }
+
+}
+
+
+
 /*-----------------------------------------------------------------------------
-Web Version
+Tablet Version
 ----------------------------------------------------------------------------*/
 
 @media screen and (min-width: 580px) {
@@ -628,14 +689,16 @@ Web Version
     .top-text-profile {
         position: absolute;
         right: 30px;
-        left: 70vw;
-        top: 30vh;
+        left: 60vw;
+        top: 6vw;
     }
 
 
     .secondpic {
         position: relative;
-        height: 100vh;
+        height: 85vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 
@@ -646,12 +709,9 @@ Web Version
     }
 
 
-
-
     .secondprofileimage {
         position: absolute;
-        height: 100vh;
-        width: auto;
+        width: 50%;
         right: 0;
     }
 
@@ -683,7 +743,7 @@ Web Version
         justify-self: center;
         position: absolute;
         right: 40px;
-        top: 30vh;
+        top: 15vh;
     }
 
     .furnitureYear {
@@ -691,7 +751,9 @@ Web Version
         justify-self: center;
         position: absolute;
         right: 90px;
-        top: 40vh;
+        margin-top: 15px;
+        font-size: 20px;
+        top: 26vh;
     }
     .squaresSubpage {
         display: grid;
@@ -833,6 +895,29 @@ Web Version
     }
     .cta:active {
         transform: scale(0.96);
+    }
+
+}
+
+/*-----------------------------------------------------------------------------
+Web Version
+----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1000px) {
+
+    .top-text-profile {
+        position: absolute;
+        right: 30px;
+        left: 60vw;
+        top: 17vw;
+    }
+
+    .furnitureTitle {
+        top: 20vw;
+    }
+
+    .furnitureYear {
+        top: 28vw;
     }
 
 }
