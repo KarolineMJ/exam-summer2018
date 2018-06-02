@@ -121,6 +121,7 @@ Mobile Version
     display: grid;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
 }
 
@@ -133,7 +134,7 @@ Mobile Version
 }
 
 .navbarSmall li {
-    padding: 0.2em;
+    padding: 0.4em;
 }
 
 .navbarSmall a {
@@ -191,6 +192,16 @@ footer p {
 .footSpons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+
+}
+
+.footSpons img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
 }
 
 .footSponsHead {
