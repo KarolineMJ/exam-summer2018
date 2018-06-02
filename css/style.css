@@ -121,7 +121,6 @@ Mobile Version
     display: grid;
     align-items: center;
     justify-content: center;
-    text-align: center;
 
 }
 
@@ -130,9 +129,12 @@ Mobile Version
     margin: 0;
     padding: 0;
     overflow: hidden;
+
 }
 
-.navbarSmall li {}
+.navbarSmall li {
+    padding: 0.2em;
+}
 
 .navbarSmall a {
     display: inline-block;
@@ -341,6 +343,7 @@ footer p {
     width: 45%;
     padding-left: 55%;
 
+
 }
 
 .squaresSubpage {
@@ -378,6 +381,13 @@ footer p {
     margin-right: auto;
 }
 
+.furnitureGraph {
+    color: gray;
+    font-style: italic;
+    padding: 1em;
+    font-size: 0.9em;
+}
+
 
 
 /*      ABOUT PAGE      */
@@ -391,7 +401,7 @@ footer p {
 }
 
 .top-text-profile {
-    padding: 4em 2em 4em 2em;
+    padding: 4em 2em;
 
 }
 
@@ -401,7 +411,7 @@ footer p {
 }
 
 .second-text {
-    padding: 4em 2em 4em 2em;
+    padding: 4em 2em;
     align-self: center;
 }
 
@@ -912,6 +922,9 @@ Web Version
         top: 17vw;
     }
 
+    .second-text {
+        padding: 4em;
+    }
     .furnitureTitle {
         top: 20vw;
     }
