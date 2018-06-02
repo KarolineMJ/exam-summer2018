@@ -225,7 +225,7 @@ footer p {
 /*      MAIN  PAGE  SLIDESHOW    */
 
 .slideshow-container {
-    width: 100vw;
+    width: 100%;
     margin: auto;
     height: 100vh;
     /* make the images go to lower left corner*/
