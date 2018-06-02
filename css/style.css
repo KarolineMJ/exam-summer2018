@@ -304,7 +304,7 @@ footer p {
 .billedeBlok {
     width: 90%;
     margin: auto;
-    padding-top: 5em;
+    padding: 5em 0em;
 
 
 }
@@ -670,8 +670,7 @@ Tablet Version
         grid-gap: 1.5em;
         padding: 1em;
         margin: auto;
-        padding-top: 5em;
-        padding-bottom: 5em;
+        padding: 5em 0em;
     }
 
     .vertical {}
