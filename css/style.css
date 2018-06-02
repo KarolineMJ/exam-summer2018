@@ -166,6 +166,7 @@ footer {
 
 .footContactInfo {
     grid-row: 1;
+    padding-top: 2em;
 }
 
 
@@ -200,7 +201,9 @@ footer p {
     text-align: center;
 }
 
-
+.soMe {
+    padding-top: 2em;
+}
 
 
 .soMe img {
@@ -302,6 +305,8 @@ footer p {
     width: 90%;
     margin: auto;
     padding-top: 5em;
+
+
 }
 
 .horizontalPic {
@@ -666,6 +671,7 @@ Tablet Version
         padding: 1em;
         margin: auto;
         padding-top: 5em;
+        padding-bottom: 5em;
     }
 
     .vertical {}
@@ -815,7 +821,9 @@ Tablet Version
 
 
     /*     FOOTER    */
-    footer {}
+    footer {
+        padding-top: 2em;
+    }
 
     .footSpons {
         display: grid;
@@ -826,6 +834,9 @@ Tablet Version
         grid-column: 1/-1;
     }
 
+    .soMe {
+        padding: 0;
+    }
     .soMe img {
         width: 5%;
     }
@@ -839,6 +850,7 @@ Tablet Version
 
     .footContactInfo {
         grid-column: 2;
+        padding: 0;
     }
 
     .footerPic {
@@ -920,6 +932,7 @@ Web Version
         right: 30px;
         left: 60vw;
         top: 17vw;
+
     }
 
     .second-text {
@@ -932,5 +945,6 @@ Web Version
     .furnitureYear {
         top: 28vw;
     }
+
 
 }
