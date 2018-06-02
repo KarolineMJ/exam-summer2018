@@ -121,7 +121,6 @@ Mobile Version
     display: grid;
     align-items: center;
     justify-content: center;
-    text-align: center;
 
 }
 
@@ -130,9 +129,12 @@ Mobile Version
     margin: 0;
     padding: 0;
     overflow: hidden;
+
 }
 
-.navbarSmall li {}
+.navbarSmall li {
+    padding: 0.2em;
+}
 
 .navbarSmall a {
     display: inline-block;
@@ -164,6 +166,7 @@ footer {
 
 .footContactInfo {
     grid-row: 1;
+    padding-top: 2em;
 }
 
 
@@ -198,7 +201,9 @@ footer p {
     text-align: center;
 }
 
-
+.soMe {
+    padding-top: 2em;
+}
 
 
 .soMe img {
@@ -299,7 +304,9 @@ footer p {
 .billedeBlok {
     width: 90%;
     margin: auto;
-    padding-top: 5em;
+    padding: 5em 0em;
+
+
 }
 
 .horizontalPic {
@@ -341,6 +348,7 @@ footer p {
     width: 45%;
     padding-left: 55%;
 
+
 }
 
 .squaresSubpage {
@@ -378,6 +386,13 @@ footer p {
     margin-right: auto;
 }
 
+.furnitureGraph {
+    color: gray;
+    font-style: italic;
+    padding: 1em;
+    font-size: 0.9em;
+}
+
 
 
 /*      ABOUT PAGE      */
@@ -391,7 +406,7 @@ footer p {
 }
 
 .top-text-profile {
-    padding: 4em 2em 4em 2em;
+    padding: 4em 2em;
 
 }
 
@@ -401,7 +416,7 @@ footer p {
 }
 
 .second-text {
-    padding: 4em 2em 4em 2em;
+    padding: 4em 2em;
     align-self: center;
 }
 
@@ -655,7 +670,7 @@ Tablet Version
         grid-gap: 1.5em;
         padding: 1em;
         margin: auto;
-        padding-top: 5em;
+        padding: 5em 0em;
     }
 
     .vertical {}
@@ -805,7 +820,9 @@ Tablet Version
 
 
     /*     FOOTER    */
-    footer {}
+    footer {
+        padding-top: 2em;
+    }
 
     .footSpons {
         display: grid;
@@ -816,6 +833,9 @@ Tablet Version
         grid-column: 1/-1;
     }
 
+    .soMe {
+        padding: 0;
+    }
     .soMe img {
         width: 5%;
     }
@@ -829,6 +849,7 @@ Tablet Version
 
     .footContactInfo {
         grid-column: 2;
+        padding: 0;
     }
 
     .footerPic {
@@ -910,8 +931,12 @@ Web Version
         right: 30px;
         left: 60vw;
         top: 17vw;
+
     }
 
+    .second-text {
+        padding: 4em;
+    }
     .furnitureTitle {
         top: 20vw;
     }
@@ -919,5 +944,6 @@ Web Version
     .furnitureYear {
         top: 28vw;
     }
+
 
 }
